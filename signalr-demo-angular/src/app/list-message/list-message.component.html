@@ -1,0 +1,12 @@
+
+<app-add-message></app-add-message>
+<table style="width: 100%;" *ngFor="let message of messages">
+
+
+<tr>
+  <td>{{message.timestamp}}</td>
+  <td>{{message.from}}</td>
+  <td>{{message.message}}</td>
+  <td>{{message.connectionId}}</td>
+</tr>
+</table>

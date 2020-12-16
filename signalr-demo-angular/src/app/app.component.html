@@ -1,0 +1,24 @@
+<div class="layout-topbar">
+  <div class="fluid-container">
+    <div class="row">
+      <div class="col-md-10">
+        <div style="color:white" class="col-md-3">Angular 6+ SignalR Notifications</div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <h1> Message app</h1>
+
+
+    <app-list-message></app-list-message>
+
+    <table style="width: 100%" *ngFor="let msg of msgs">
+      <tr>
+        <td style="color: red; font-weight: bold">{{msg.timestamp}}</td>
+        <td style="color: red; font-weight: bold">{{msg.from}}</td>
+        <td style="color: red; font-weight: bold">{{msg.message}}</td>
+      </tr>
+    </table>
+
+</div>
